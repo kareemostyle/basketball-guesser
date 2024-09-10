@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+.flex-container {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: coral;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.guesser-container {
+  width: 30%;
+  height: 40%;
+  background-color: rgb(119, 0, 255);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.question-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: floralwhite;
+  margin: 10% 10%;
+  font-size: x-large;
 }
 
-.App-link {
-  color: #61dafb;
+.answer-list {
+  font-size: large;
+  color: floralwhite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-title {
+  color: floralwhite;
+  font-size: xx-large;
 }
