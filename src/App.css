@@ -6,12 +6,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: coral;
+  background-color: #ee6730;
 }
 
 .guesser-container {
-  width: 30%;
-  height: 40%;
+  width: 40%;
+  height: 50%;
   background-color: rgb(119, 0, 255);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -28,6 +28,15 @@
   font-size: x-large;
 }
 
+.score-container {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  font-size: large;
+  padding-top: 5vh;
+  font-weight: bold;
+}
+
 .answer-list {
   font-size: large;
   color: floralwhite;
@@ -36,4 +45,73 @@
 .game-title {
   color: floralwhite;
   font-size: xx-large;
+}
+
+.answer:hover {
+  color: #ee6730;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.score-text {
+  text-transform: uppercase;
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#scoreboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  height: 30%;
+  border-radius: 5px;
+  border: 5px solid white;
+  background-color: darkblue;
+  margin: 50px 50px;
+}
+
+.player-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score {
+  position: relative;
+  width: 18em;
+  height: 10em;
+  margin-bottom: 30px;
+  background-color: #0c0c0c;
+}
+
+.points-shadow {
+  font-family: "Digital Display", monospace;
+  font-size: 11em;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 52.5%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: black;
+}
+
+.points {
+  font-family: "Digital Display", monospace;
+  font-size: 11em;
+  text-align: end;
+
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+  margin-right: 37.2px;
+  color: rgb(255, 217, 0);
 }
