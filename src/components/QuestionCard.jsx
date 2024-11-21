@@ -7,8 +7,8 @@ const QuestionCard = ({ question, listOfAnswers }) => {
         </div>
         <div className="guess">
           <ol className="answer-list">
-            {listOfAnswers.map((answer) => (
-              <li>
+            {listOfAnswers.map((answer, index) => (
+              <li key={index}>
                 <span className="answer">{answer}</span>
               </li>
             ))}
