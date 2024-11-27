@@ -1,4 +1,9 @@
-const QuestionCard = ({ question, listOfAnswers }) => {
+const QuestionCard = ({
+  question,
+  listOfAnswers,
+  answerIndex,
+  updateScore,
+}) => {
   return (
     <>
       <div className="guesser-container">
@@ -9,7 +14,14 @@ const QuestionCard = ({ question, listOfAnswers }) => {
           <ol className="answer-list">
             {listOfAnswers.map((answer, index) => (
               <li key={index}>
-                <span className="answer">{answer}</span>
+                <span
+                  className="answer"
+                  onClick={() => {
+                    index === answerIndex && updateScore();
+                  }}
+                >
+                  {answer}
+                </span>
               </li>
             ))}
           </ol>
